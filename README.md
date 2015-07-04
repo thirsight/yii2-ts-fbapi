@@ -25,13 +25,15 @@ to the require section of your `composer.json` file.
 Setting
 -------
 
+Settings in config/bootstrap.php
+
 ```php
 \Yii::$container->set('ts\fbapi\Facebook', [
     'appId' => '9166967xxxxxxxx',
     'appSecret' => 'ac4035a6183d50xxxxxxxxxxxxxxxx',
     'redirectRoute' => ['site/facebook-after-auth'],
 ]);
-
+```
 
 Usage
 -----
@@ -39,4 +41,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= Yii::$container->get(Facebook::className())->getLoginUrl(); ?>```
+<?= Yii::$container->get(Facebook::className())->getLoginUrl(); ?>
+```
