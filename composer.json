@@ -1,0 +1,16 @@
+{
+    "name": "thirsight/yii2-ts-fbapi",
+    "description": "Facebook api for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","facebook api"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Haisen",
+            "email": "thirsight@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    }
+}
