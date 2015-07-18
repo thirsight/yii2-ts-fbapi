@@ -136,13 +136,11 @@ class Facebook extends \yii\base\Object
              * 个人相片
              * @see http://www.cnblogs.com/liminjun88/archive/2013/03/01/2938769.html
              */
-            $user['fb_id'] = $user['id'];
-            $user['fb_picture'] = 'https://graph.facebook.com/' . $user['id'] . '/picture?width=80&height=80&return_ssl_resources=1';
-            $user['fb_verified'] = $user['verified'];
+            $user['picture'] = 'https://graph.facebook.com/' . $user['id'] . '/picture?width=80&height=80&return_ssl_resources=1';
 
             /* access token 及到期时间 */
-            $user['fb_access_token'] = $session->getToken();
-            $user['fb_expire_at'] = $session->getAccessToken()->getExpiresAt()->getTimestamp();
+            $user['access_token'] = $session->getToken();
+            $user['expire_at'] = $session->getAccessToken()->getExpiresAt()->getTimestamp();
 
             return $user;
         } catch(\Exception $ex) {
